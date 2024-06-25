@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # SMTP SERVER SETTINGS
-d
 port = int(os.getenv("PORT"))
 smtp_server = os.getenv("SMTP_SERVER")
 
