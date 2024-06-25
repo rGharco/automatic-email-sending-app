@@ -27,11 +27,9 @@ with smtplib.SMTP_SSL(smtp_server, port, context=ssl.create_default_context()) a
     server.login(sender_email, password)
 
     # DATABASE CONNECT
-
     clients = get_expired_subscription_clients()
 
     # EMAIL SENDING
-
     for client in clients:
         print(f"Emails sent to: {client[3]}")
         try:
